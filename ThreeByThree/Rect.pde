@@ -1,3 +1,9 @@
+//Global variables
+int numberOfPoints = 17;
+float[] ptX = new float[numberOfPoints];
+float[] ptY = new float[numberOfPoints];
+float ptDiameter, rectWidth, rectHeight;
+//
 void rectSetup() {
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   rect(ptX[2], ptY[2], rectWidth, rectHeight);

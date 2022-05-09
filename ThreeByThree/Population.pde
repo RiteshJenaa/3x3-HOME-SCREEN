@@ -1,3 +1,10 @@
+//Global variables
+int numberOfImages = 9;
+float[] imageX = new float[numberOfImages];
+float[] imageY = new float[numberOfImages];
+float imageWidth, imageHeight;
+//
+
 void population() {
   //Rect Population
   rectWidth = appWidth*1/3;
@@ -54,27 +61,8 @@ void population() {
   buttonWidth[8] = rectWidth*1/4;
   buttonHeight[8] = rectHeight*1/5;
   //
-  button1X = rectWidth; //stars at the left edge of box 5
-  button1Y = rectHeight*15/8; // rectHeight*8/8 would start it from the very top of box 5
-  button1Width = rectWidth*7/24;
-  button1Height = rectHeight*1/8;
-  //Button 2 (for box 6)
-  button2X = rectWidth*14/6; 
-  button2Y = rectHeight*27/16; 
-  button2Width = rectWidth*1/3;
-  button2Height = rectHeight*1/5;
-  //Button 3 (for box 1)
-  button3X = rectWidth*1/25; 
-  button3Y = rectHeight*5/16; 
-  button3Width = rectWidth*1/4;
-  button3Height = rectHeight*1/5;
-  //Button 4 (for box 9)
-  button4X = rectWidth*14/5; 
-  button4Y = rectHeight*21/8; 
-  button4Width = rectWidth*1/6;
-  button4Height = rectHeight*1/4;
+  //Colour Buttons population
 
-  //Button 5 + Colour Buttons population
   cButton1X = rectWidth*10/9; 
   cButton1Y = rectHeight*18/8; 
   cButton2X = rectWidth*14/9; 
@@ -83,26 +71,9 @@ void population() {
   cButton3Y = rectHeight*21/8;
   cButtonWidth = rectWidth*1/3;
   cButtonHeight = rectHeight*1/5;
-  button5X = cButton2X;
-  button5Y = cButton3Y;
+  buttonX5 = cButton2X;
+  buttonY5 = cButton3Y;
   //
-
-  //Button 6 (for box 4)
-  button6X = rectWidth*11/16; 
-  button6Y = rectHeight*9/8; 
-  button6Width = rectWidth*1/4;
-  button6Height = rectHeight*1/5;
-  //Button 7 (for box 7)
-  button7X = rectWidth*3/8; 
-  button7Y = rectHeight*16/8; 
-  button7Width = rectWidth*1/4;
-  button7Height = rectHeight*1/4;
-  //Button 8 (for box 3)
-  button8X = rectWidth*31/15; 
-  button8Y = rectHeight*5/8; 
-  button8Width = rectWidth*1/4;
-  button8Height = rectHeight*1/5;
-
   //Quit Button population
 
   quitButtonX = rectWidth*5/4;
@@ -136,30 +107,30 @@ void imgTextPopulation()
   pic7 = loadImage ("colour.jpg"); 
   pic8 = loadImage ("race2.jpg"); 
   //
-  image1X = appWidth*1/3;
-  image1Y = appHeight*1/3;
-  image2X = appWidth*2/3;
-  image2Y = appHeight*1/3;
-  image3X = appWidth*0;
-  image3Y = appHeight*0;
-  image4X = appWidth*0;
-  image4Y = appHeight*1/3;
-  image5X = appWidth*0;
-  image5Y = appHeight*2/3;
-  image6X = appWidth*2/3;
-  image6Y = appHeight*0;
-  image7X = appWidth*2/3;
-  image7Y = appHeight*2/3;
-  image8X = appWidth*2/3;
-  image8Y = appHeight*0;
+  imageX[1] = appWidth*1/3;
+  imageY[1] = appHeight*1/3;
+  imageX[2] = appWidth*2/3;
+  imageY[2] = appHeight*1/3;
+  imageX[3] = appWidth*0;
+  imageY[3] = appHeight*0;
+  imageX[4] = appWidth*0;
+  imageY[4] = appHeight*1/3;
+  imageX[5] = appWidth*0;
+  imageY[5] = appHeight*2/3;
+  imageX[6] = appWidth*2/3;
+  imageY[6] = appHeight*0;
+  imageX[7] = appWidth*2/3;
+  imageY[7] = appHeight*2/3;
+  imageX[8] = appWidth*2/3;
+  imageY[8] = appHeight*0;
   //
   //Text
+  text1Y = rectHeight*2/3;
+  text1Height = rectHeight*1/3;
   text6X = appWidth*20/30;
   text6Y = appHeight*7/18; 
   text6Width = appWidth*1/3;
   text6Height = rectHeight;
-  text1Y = rectHeight*2/3;
-  text1Height = rectHeight*1/3;
   text8Y = rectHeight*31/15;
   //
 }

@@ -1,10 +1,24 @@
 //Global Variables
+PFont Font;
+float text1Y, text1Height, text6X, text6Y, text6Width, text6Height, text8Y;
+String quit= "Quit";
+String restart= "Reset";
+String start= "Start";
+String clickMe= "Click Me!";
+String clickHere= "Click Here!";
+String Find= "Find out!";
 //
+String box6Text= "What's my favourite colour?";
+String box1Text= "take a guess!";
+String box8Text= "Well try these ones!";
+String box4Text= "'When you photograph people in color, you photograph their clothes. But when you photograph people in Black and white, you photograph their souls!' ― Ted Grant";
+//
+
 void button1Text() {
   textAlign (CENTER, CENTER);
   textFont(Font);
   fill(gray);
-  text(clickMe, button1X, button1Y, button1Width, button1Height);
+  text(start, buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   fill(resetWhite);
 }
 //End button1Text
@@ -27,7 +41,7 @@ void box6Text() {
 void button2Text() {
   textAlign (CENTER, CENTER);
   textFont(Font, 40);
-  text(clickHere, button2X, button2Y, button2Width, button2Height);
+  text(clickHere, buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
   textFont(Font);
   fill(resetWhite);
 }
@@ -51,7 +65,7 @@ void box1Text() {
 void button3Text() {
   textAlign (CENTER, CENTER);
   textFont(Font, 30);
-  text(clickHere, button3X, button3Y, button3Width, button3Height);
+  text(clickHere, buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   textFont(Font);
   fill(resetWhite);
 }
@@ -75,7 +89,7 @@ void box8Text() {
 void button5Text() {
   textAlign (CENTER, CENTER);
   textFont(Font);
-  text(Find, button5X, button5Y, cButtonWidth, cButtonHeight);
+  text(Find, buttonX5, buttonY5, cButtonWidth, cButtonHeight);
   fill(resetWhite);
 }
 //End button5Text
@@ -86,7 +100,7 @@ void button5Text() {
 void button4Text() {
   textAlign (CENTER, CENTER);
   textFont(Font, 20);
-  text(clickMe, button4X, button4Y, button4Width, button4Height);
+  text(clickMe, buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
   textFont(Font);
   fill(resetWhite);
 }
@@ -110,7 +124,7 @@ void box4Text() {
 void button6Text() {
   textAlign (CENTER, CENTER);
   textFont(Font);
-  text(clickMe, button6X, button6Y, button6Width, button6Height);
+  text(clickMe, buttonX[6], buttonY[6], buttonWidth[6], buttonHeight[6]);
   fill(resetWhite);
 }
 //End button6Text
@@ -121,7 +135,7 @@ void button6Text() {
 void button7Text() {
   textAlign (CENTER, CENTER);
   textFont(Font);
-  text(clickMe, button7X, button7Y, button7Width, button7Height);
+  text(clickMe, buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]);
   fill(resetWhite);
 }
 //End button7Text
@@ -130,9 +144,11 @@ void button7Text() {
 
 void button8Text() {
   textAlign (CENTER, CENTER);
-  textFont(Font);
-  text(clickMe, button8X, button8Y, button8Width, button8Height);
+  textFont(Font, 30);
   fill(resetWhite);
+  text(clickMe, buttonX[8], buttonY[8], buttonWidth[8], buttonHeight[8]);
+  fill(resetWhite);
+  textFont(Font, 30);
 }
 //End button8Text
 
