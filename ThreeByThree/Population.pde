@@ -105,11 +105,13 @@ void imgTextPopulation()
   //Text
   text1Y = appHeight*0.1/3;
   text1Height = appHeight*2/3;
-  text6X = appWidth*2/3;
+  text6X = appWidth*20/30;
   text6Y = appHeight*7/18; 
   text6Width = appWidth*1/3;
   text6Height = rectHeight;
+  text7Y = appHeight*11/15;
   text8Y = appHeight*14.25/15;
+  //
   //
   imageWidth = rectWidth;
   imageHeight = rectHeight;

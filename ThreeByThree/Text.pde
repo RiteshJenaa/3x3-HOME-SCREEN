@@ -1,6 +1,6 @@
 //Global Variables
 PFont Font;
-float text1Y, text1Height, text6X, text6Y, text6Width, text6Height, text8Y;
+float text1Y, text1Height, text6X, text6Y, text6Width, text6Height, text7Y, text8Y;
 String quit= "Quit";
 String restart= "Reset";
 String start= "Start";
@@ -110,7 +110,7 @@ void box4Text() {
   textAlign (CENTER, TOP);
   textFont(Font, 30);
   fill(purple);
-  text(box4Text, ptX[5], text8Y, rectWidth, rectHeight);
+  text(box4Text, ptX[5], text7Y, rectWidth, rectHeight);
   fill(resetWhite);
   textFont(Font);
 }
