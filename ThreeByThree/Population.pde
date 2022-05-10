@@ -102,6 +102,15 @@ void buttonPopulation() {
 
 void imgTextPopulation()
 {
+  //Text
+  text1Y = appHeight*0.1/3;
+  text1Height = appHeight*2/3;
+  text6X = appWidth*2/3;
+  text6Y = appHeight*7/18; 
+  text6Width = appWidth*1/3;
+  text6Height = rectHeight;
+  text8Y = appHeight*14.25/15;
+  //
   imageWidth = rectWidth;
   imageHeight = rectHeight;
   //
@@ -130,15 +139,6 @@ void imgTextPopulation()
   imageY[7] = appHeight*2/3;
   imageX[8] = appWidth*2/3;
   imageY[8] = appHeight*0;
-  //
-  //Text
-  text1Y = appHeight*0.1/3;
-  text1Height = appHeight*2/3;
-  text6X = appWidth*2/3;
-  text6Y = appHeight*7/18; 
-  text6Width = appWidth*1/3;
-  text6Height = rectHeight;
-  text8Y = appHeight*14.25/15;
   //
 }
 //End imgTextPopulation
