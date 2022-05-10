@@ -6,7 +6,8 @@ void setup() {
   fullScreen(); //landscape
   background(gray);
   DisplayOrientation();
-  population();
+  ptPopulation();
+  buttonPopulation();
   imgTextPopulation();
   Font = createFont ("Arial", 40);
   background(190);

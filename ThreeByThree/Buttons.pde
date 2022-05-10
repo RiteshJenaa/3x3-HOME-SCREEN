@@ -10,14 +10,16 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, restartButton
 void button1() {
   rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
-    fill(black);
+    fill(green);
     rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+    fill(black);
     button1Text();
   } else {
-    stroke(gray);
-    fill(resetWhite);
+    stroke(green);
+    fill(gold);
     rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
     stroke(black);
+    fill(resetWhite);
     button1Text();
   }
   fill(resetWhite);

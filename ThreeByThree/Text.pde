@@ -16,8 +16,7 @@ String box4Text= "'When you photograph people in color, you photograph their clo
 
 void button1Text() {
   textAlign (CENTER, CENTER);
-  textFont(Font);
-  fill(gray);
+  textFont(Font, 25);
   text(start, buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   fill(resetWhite);
 }
@@ -29,10 +28,8 @@ void button1Text() {
 void box6Text() {
   textAlign (CENTER, TOP);
   textFont(Font, 50);
-  fill(resetWhite);
   text(box6Text, text6X, text6Y, text6Width, text6Height);
   fill(resetWhite);
-  textFont(Font);
 }
 //End box6Text
 
@@ -160,7 +157,6 @@ void quitText() {
   textFont(Font, 25);
   text(quit, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   fill(resetWhite);
-  textFont(Font);
 }
 //End quitText
 
@@ -171,7 +167,6 @@ void restartText() {
   textFont(Font, 25);
   text(restart, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   fill(resetWhite);
-  textFont(Font);
 }
 //End restartText
 
