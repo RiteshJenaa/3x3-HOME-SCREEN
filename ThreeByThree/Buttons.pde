@@ -1,5 +1,5 @@
 //Global variables
-int numberOfButtons = 10;
+int numberOfButtons = 9;
 float[] buttonX = new float[numberOfButtons];
 float[] buttonY = new float[numberOfButtons];
 float[] buttonWidth = new float[numberOfButtons];
