@@ -4,7 +4,7 @@ PImage pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8;
 //
 //BOXES
 //
-void MiddleBox() {
+void middleBox() {
   image(pic1, imageX[1], imageY[1], imageWidth, imageHeight);
   button1();
 }
@@ -12,8 +12,8 @@ void MiddleBox() {
 
 //
 
-void box6() {
-  if (box6On == true) {
+void middleRightBox() {
+  if (middleRightBox == true) {
     image(pic2, imageX[2], imageY[2], imageWidth, imageHeight);
     line(ptX[7], ptY[7], ptX[8], ptY[8]);
     line(ptX[7], ptY[7], ptX[11], ptY[11]);
@@ -21,89 +21,90 @@ void box6() {
     button2();
   }
 }
-//End box6
+//End middleRightBox
 
 //
 
-void box1() {
-  if (box1On == true) {
+void topLeftBox() {
+  if (topLeftBox == true) {
     image(pic3, imageX[3], imageY[3], imageWidth, imageHeight); //extra lines aren't needed because this box is at the top right
     box1Text();
     button3();
   }
 }
-//End box1
+//End topLeftBox
 
 //
 
-void box9() {
-  if (box9On == true) {
+void bottomRightBox() {
+  if (bottomRightBox == true) {
     image(pic7, imageX[7], imageY[7], imageWidth, imageHeight);
     button4();
   }
 }
-//End box9
+//End bottomRightBox
 
 //
 
-void box8() {
-  if (box8On == true) {
+void bottomMiddleBox() {
+  if (bottomMiddleBox == true) {
     colourRect();
     colouredButtons();
     button5();
     box8Text();
   }
 }
-//End box8
+//End bottomMiddleBox
 
 //
 
-void box4() {
-  if (box4On == true) {
+void middleLeftBox() {
+  if (middleLeftBox == true) {
     box4Text();
     image(pic4, imageX[4], imageY[4], imageWidth, imageHeight);
     line(ptX[5], ptY[5], ptX[6], ptY[6]);
     button6();
   }
 }
-//End box4
+//End middleLeftBox
 
 //
 
-void box7() {
-  if (box7On == true) {
+void bottomLeftBox() {
+  if (bottomLeftBox == true) {
+    box4Text();
     image(pic5, imageX[5], imageY[5], imageWidth, imageHeight);
     line(ptX[9], ptY[9], ptX[10], ptY[10]);
     button7();
   }
 }
-//End box7
+//End bottomLeftBox
 
 //
 
-void box3() {
+void topRightBox() {
 
-  if (box3On == true) {
-    if (picOn == true) {
+  if (topRightBox == true) {
+    if (imageOn == true) {
       image(pic8, imageX[8], imageY[8], imageWidth, imageHeight);
       line(ptX[3], ptY[3], ptX[7], ptY[7]);
       button8();
     }
-    if (picOn == false) {
+    if (imageOn == false) {
       image(pic6, imageX[6], imageY[6], imageWidth, imageHeight);
       line(ptX[3], ptY[3], ptX[7], ptY[7]);
       button8();
     }
   }
 }
-//End box3
+//End topRightBox
 
 //
 
-void box2() {
+void topMiddleBox() {
   quitButton();
   restartButton();
 }
-//End box2
+//End topMiddleBox
 
 //

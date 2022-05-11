@@ -29,7 +29,7 @@ void box1Text() {
 void box4Text() {
   textAlign (CENTER, TOP);
   textFont(Font, 25);
-  fill(resetWhite);
+  fill(violet);
   text(box4Text, ptX[5], text7Y, rectWidth, rectHeight);
 }
 //End box4Text

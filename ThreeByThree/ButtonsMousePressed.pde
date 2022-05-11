@@ -1,15 +1,16 @@
 //Global Varaibles
-Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, box7On=false, box3On=false, turquoiseOn=false, greenOn=false, pinkOn=false, picOn=false;
+Boolean middleRightBox=false, topLeftBox=false, bottomRightBox=false, bottomMiddleBox=false, middleLeftBox=false, bottomLeftBox=false, topRightBox=false;
+Boolean turquoiseOn=false, greenOn=false, pinkOn=false, imageOn=false;
 //
 void ButtonsMousePressed1()
 {
-  if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1] ) box6On = true;
-  if ( mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2] ) box1On = true;
-  if ( mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3] ) box9On = true;
-  if ( mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4] ) box8On = true;
-  if ( mouseX>=buttonX5 && mouseX<=buttonX5+cButtonWidth && mouseY>=buttonY5 && mouseY<=buttonY5+cButtonHeight ) box4On = true;
-  if ( mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6] ) box7On = true;
-  if ( mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7] ) box3On = true;
+  if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1] ) middleRightBox = true;
+  if ( mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2] ) topLeftBox = true;
+  if ( mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3] ) bottomRightBox = true;
+  if ( mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4] ) bottomMiddleBox = true;
+  if ( mouseX>=buttonX5 && mouseX<=buttonX5+cButtonWidth && mouseY>=buttonY5 && mouseY<=buttonY5+cButtonHeight ) middleLeftBox = true;
+  if ( mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6] ) bottomLeftBox = true;
+  if ( mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7] ) topRightBox = true;
   //
 }
 
@@ -46,11 +47,11 @@ void ColouredButtonMousePressed()
 void picButton()
 {
   if ( mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8] ) {
-    if (picOn == false) {
-      picOn = true;
+    if (imageOn == false) {
+      imageOn = true;
     } else {
-      if (picOn == true) {
-        picOn = false;
+      if (imageOn == true) {
+        imageOn = false;
       }
     }
   }
@@ -65,13 +66,13 @@ void QuitRestartButton()
   //
   if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight) exit();
   if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight) {
-    box1On = false;
-    box3On =false;
-    box4On = false;
-    box6On = false;
-    box7On = false;
-    box8On = false;
-    box9On = false;
+    middleRightBox = false;
+    topLeftBox =false;
+    bottomRightBox = false;
+    bottomMiddleBox = false;
+    middleLeftBox = false;
+    bottomLeftBox = false;
+    topRightBox = false;
     turquoiseOn = false;
     greenOn = false;
     pinkOn = false;

@@ -17,15 +17,15 @@ void setup() {
 
 void draw() {
   rectSetup();
-  MiddleBox();
-  box6();
-  box1();
-  box9();
-  box8();
-  box4();
-  box7();
-  box3();
-  box2();
+  middleBox();
+  middleRightBox();
+  topLeftBox();
+  bottomRightBox();
+  bottomMiddleBox();
+  middleLeftBox();
+  bottomLeftBox();
+  topRightBox();
+  topMiddleBox();
   pointSetup(); //circles at the corners of each box
   variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
 }
