@@ -2,6 +2,27 @@
 Boolean middleRightBox=false, topLeftBox=false, bottomRightBox=false, bottomMiddleBox=false, middleLeftBox=false, bottomLeftBox=false, topRightBox=false;
 Boolean turquoiseOn=false, greenOn=false, pinkOn=false, imageOn=false;
 //
+void QuitRestartButton()
+{
+  //
+  if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight) exit();
+  if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight) {
+    middleRightBox = false;
+    topLeftBox =false;
+    bottomRightBox = false;
+    bottomMiddleBox = false;
+    middleLeftBox = false;
+    bottomLeftBox = false;
+    topRightBox = false;
+    turquoiseOn = false;
+    greenOn = false;
+    pinkOn = false;
+  }
+}
+//End QuitRestartButton
+
+//
+
 void ButtonsMousePressed1()
 {
   if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1] ) middleRightBox = true;
@@ -60,22 +81,3 @@ void imageControlButton()
 //End imageControlButton
 
 //
-
-void QuitRestartButton()
-{
-  //
-  if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight) exit();
-  if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight) {
-    middleRightBox = false;
-    topLeftBox =false;
-    bottomRightBox = false;
-    bottomMiddleBox = false;
-    middleLeftBox = false;
-    bottomLeftBox = false;
-    topRightBox = false;
-    turquoiseOn = false;
-    greenOn = false;
-    pinkOn = false;
-  }
-}
-//End QuitRestartButton

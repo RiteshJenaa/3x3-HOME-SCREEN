@@ -29,6 +29,53 @@ void ptPopulation() {
 
 //
 
+void imgTextPopulation()
+{
+  //Text
+  text1Y = appHeight*0.1/3;
+  text1Height = appHeight*2/3;
+  text6X = appWidth*20/30;
+  text6Y = appHeight*7/18; 
+  text6Width = appWidth*1/3;
+  text6Height = rectHeight;
+  text7Y = appHeight*11/15;
+  text8Y = appHeight*14.25/15;
+  //
+  //
+  imageWidth = rectWidth;
+  imageHeight = rectHeight;
+  //
+  pic1 = loadImage ("lets-get-started.jpg"); 
+  pic2 = loadImage ("Grass.jpeg"); 
+  pic3 = loadImage ("colours.jpg"); 
+  pic4 = loadImage ("Quote.jpg"); 
+  pic5 = loadImage ("therefore.jpg"); 
+  pic6 = loadImage ("equal2.jpg"); 
+  pic7 = loadImage ("colour.jpg"); 
+  pic8 = loadImage ("race2.jpg"); 
+  //
+  imageX[1] = appWidth*1/3;
+  imageY[1] = appHeight*1/3;
+  imageX[2] = appWidth*2/3;
+  imageY[2] = appHeight*1/3;
+  imageX[3] = appWidth*0;
+  imageY[3] = appHeight*0;
+  imageX[4] = appWidth*0;
+  imageY[4] = appHeight*1/3;
+  imageX[5] = appWidth*0;
+  imageY[5] = appHeight*2/3;
+  imageX[6] = appWidth*2/3;
+  imageY[6] = appHeight*0;
+  imageX[7] = appWidth*2/3;
+  imageY[7] = appHeight*2/3;
+  imageX[8] = appWidth*2/3;
+  imageY[8] = appHeight*0;
+  //
+}
+//End imgTextPopulation
+
+//
+
 void buttonPopulation() {
 
   //Button population
@@ -99,48 +146,3 @@ void buttonPopulation() {
 //End buttonPopulation
 
 //
-
-void imgTextPopulation()
-{
-  //Text
-  text1Y = appHeight*0.1/3;
-  text1Height = appHeight*2/3;
-  text6X = appWidth*20/30;
-  text6Y = appHeight*7/18; 
-  text6Width = appWidth*1/3;
-  text6Height = rectHeight;
-  text7Y = appHeight*11/15;
-  text8Y = appHeight*14.25/15;
-  //
-  //
-  imageWidth = rectWidth;
-  imageHeight = rectHeight;
-  //
-  pic1 = loadImage ("lets-get-started.jpg"); 
-  pic2 = loadImage ("Grass.jpeg"); 
-  pic3 = loadImage ("colours.jpg"); 
-  pic4 = loadImage ("Quote.jpg"); 
-  pic5 = loadImage ("therefore.jpg"); 
-  pic6 = loadImage ("equal2.jpg"); 
-  pic7 = loadImage ("colour.jpg"); 
-  pic8 = loadImage ("race2.jpg"); 
-  //
-  imageX[1] = appWidth*1/3;
-  imageY[1] = appHeight*1/3;
-  imageX[2] = appWidth*2/3;
-  imageY[2] = appHeight*1/3;
-  imageX[3] = appWidth*0;
-  imageY[3] = appHeight*0;
-  imageX[4] = appWidth*0;
-  imageY[4] = appHeight*1/3;
-  imageX[5] = appWidth*0;
-  imageY[5] = appHeight*2/3;
-  imageX[6] = appWidth*2/3;
-  imageY[6] = appHeight*0;
-  imageX[7] = appWidth*2/3;
-  imageY[7] = appHeight*2/3;
-  imageX[8] = appWidth*2/3;
-  imageY[8] = appHeight*0;
-  //
-}
-//End imgTextPopulation
