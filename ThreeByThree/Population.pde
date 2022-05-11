@@ -138,7 +138,7 @@ void buttonPopulation() {
   //Restart Button population
 
   restartButtonX = appWidth*7.5/18;
-  restartButtonY = appHeight*1.75/9;
+  restartButtonY = appHeight*1.5/9;
   restartButtonWidth = appWidth*1/6;
   restartButtonHeight = appHeight*1/9;
   //
