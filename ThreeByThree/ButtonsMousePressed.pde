@@ -44,7 +44,7 @@ void ColouredButtonMousePressed()
 
 //
 
-void picButton()
+void imageControlButton()
 {
   if ( mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8] ) {
     if (imageOn == false) {
@@ -57,7 +57,7 @@ void picButton()
   }
 }
 
-//End picButton
+//End imageControlButton
 
 //
 

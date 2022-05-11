@@ -34,6 +34,7 @@ void pointSetup()
   ellipse(ptX[9], ptY[9], ptDiameter, ptDiameter);
   ellipse(ptX[10], ptY[10], ptDiameter, ptDiameter);
   ellipse(ptX[11], ptY[11], ptDiameter, ptDiameter);
+  stroke(gold);
   fill(resetWhite);
 
   //pt red
@@ -46,6 +47,7 @@ void pointSetup()
   ellipse(ptX[14], ptY[14], ptDiameter, ptDiameter);
   ellipse(ptX[15], ptY[15], ptDiameter, ptDiameter);
   ellipse(ptX[16], ptY[16], ptDiameter, ptDiameter);
+  stroke(gold);
   fill(resetWhite);
 
   //

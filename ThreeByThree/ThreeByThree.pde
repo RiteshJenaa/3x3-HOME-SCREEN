@@ -7,14 +7,14 @@ int angle = 0;
 void setup() 
 {
   fullScreen(); //landscape
-  background(gray);
   DisplayOrientation();
   ptPopulation();
   buttonPopulation();
   imgTextPopulation();
   //
   Font = createFont ("Arial", 40);
-  background(190);
+  //
+  background(102);
   //
   noStroke();
   fill(0, 102);
@@ -39,7 +39,7 @@ void draw() {
   //
   if (mousePressed == true) {
     angle += 5;
-    float val = cos(radians(angle)) * 12.0;
+    float val = cos(radians(angle)) * 15.0;
     for (int a = 0; a < 360; a += 75) {
       float xoff = cos(radians(a)) * val;
       float yoff = sin(radians(a)) * val;
@@ -70,6 +70,6 @@ void mousePressed()
 {
   ButtonsMousePressed1();
   ColouredButtonMousePressed();
-  picButton();
+  imageControlButton();
   QuitRestartButton();
 }
