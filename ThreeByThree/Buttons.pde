@@ -7,6 +7,8 @@ float[] buttonHeight = new float[numberOfButtons];
 float cButtonWidth, cButtonHeight, cButton1X, cButton1Y, cButton2X, cButton2Y, cButton3X, cButton3Y, buttonX5, buttonY5;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight;
 //
+//BUTTONS
+
 void button1() {
   rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
@@ -95,47 +97,47 @@ void button4() {
 void colouredButtons() {
   rect(cButton1X, cButton1Y, cButtonWidth, cButtonHeight);
   if ( mouseX>=cButton1X && mouseX<=cButton1X+cButtonWidth && mouseY>=cButton1Y && mouseY<=cButton1Y+cButtonHeight ) {
-    stroke(#98C8F0);
-    fill(#98C8F0);
+    stroke(#69E8E0);
+    fill(#69E8E0);
     rect(cButton1X, cButton1Y, cButtonWidth, cButtonHeight);
     fill(resetWhite);
     stroke(black);
   } else {
-    stroke(#B6D9F7);
-    fill(#B6D9F7);
+    stroke(#93F7F1);
+    fill(#93F7F1);
     rect(cButton1X, cButton1Y, cButtonWidth, cButtonHeight);
-    stroke(black);
-    fill(resetWhite);
+    stroke(resetWhite);
+    fill(black);
   }
   fill(resetWhite);
   //
   rect(cButton2X, cButton2Y, cButtonWidth, cButtonHeight);
   if ( mouseX>=cButton2X && mouseX<=cButton2X+cButtonWidth && mouseY>=cButton2Y && mouseY<=cButton2Y+cButtonHeight ) {
-    stroke(#7CD37C);
-    fill(#7CD37C);
+    stroke(#28DE5D);
+    fill(#28DE5D);
     rect(cButton2X, cButton2Y, cButtonWidth, cButtonHeight);
     fill(resetWhite);
   } else {
     stroke(#B2E5B3);
     fill(#B2E5B3);
     rect(cButton2X, cButton2Y, cButtonWidth, cButtonHeight);
-    stroke(black);
-    fill(resetWhite);
+    stroke(resetWhite);
+    fill(black);
   }
   fill(resetWhite);
   //
   rect(cButton3X, cButton3Y, cButtonWidth, cButtonHeight);
   if ( mouseX>=cButton3X && mouseX<=cButton3X+cButtonWidth && mouseY>=cButton3Y && mouseY<=cButton3Y+cButtonHeight ) {
-    stroke(#FAB1D9);
-    fill(#FAB1D9);
+    stroke(#D151D3);
+    fill(#D151D3);
     rect(cButton3X, cButton3Y, cButtonWidth, cButtonHeight);
     fill(resetWhite);
   } else {
-    stroke(#FAD7EA);
-    fill(#FAD7EA);
+    stroke(#F8A4FA);
+    fill(#F8A4FA);
     rect(cButton3X, cButton3Y, cButtonWidth, cButtonHeight);
-    stroke(black);
-    fill(resetWhite);
+    stroke(resetWhite);
+    fill(black);
   }
   fill(resetWhite);
 }

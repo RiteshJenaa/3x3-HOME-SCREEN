@@ -1,5 +1,5 @@
 //Global Varaibles
-Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, box7On=false, box3On=false, blueOn=false, greenOn=false, pinkOn=false, picOn=false;
+Boolean box6On=false, box1On=false, box9On=false, box8On=false, box4On=false, box7On=false, box3On=false, turquoiseOn=false, greenOn=false, pinkOn=false, picOn=false;
 //
 void ButtonsMousePressed1()
 {
@@ -20,19 +20,19 @@ void ButtonsMousePressed1()
 void ColouredButtonMousePressed()
 {
   if ( mouseX>=cButton1X && mouseX<=cButton1X+cButtonWidth && mouseY>=cButton1Y && mouseY<=cButton1Y+cButtonHeight) {
-    blueOn = true;
+    turquoiseOn = true;
     greenOn = false;
     pinkOn = false;
   }
   //
   if ( mouseX>=cButton2X && mouseX<=cButton2X+cButtonWidth && mouseY>=cButton2Y && mouseY<=cButton2Y+cButtonHeight) {
-    blueOn = false;
+    turquoiseOn = false;
     greenOn = true;
     pinkOn = false;
   }
   //
   if ( mouseX>=cButton3X && mouseX<=cButton3X+cButtonWidth && mouseY>=cButton3Y && mouseY<=cButton3Y+cButtonHeight) {
-    blueOn = false;
+    turquoiseOn = false;
     greenOn = false;
     pinkOn = true;
   }
@@ -72,7 +72,7 @@ void QuitRestartButton()
     box7On = false;
     box8On = false;
     box9On = false;
-    blueOn = false;
+    turquoiseOn = false;
     greenOn = false;
     pinkOn = false;
   }
