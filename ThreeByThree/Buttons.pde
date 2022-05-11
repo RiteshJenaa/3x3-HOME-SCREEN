@@ -9,6 +9,47 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, restartButton
 //
 //BUTTONS
 
+void quitButton() {
+  rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight ) {
+    fill(black);
+    rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+    fill(resetWhite);
+    quitText();
+  } else {
+    stroke(black);
+    fill(green);
+    rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+    stroke(gold);
+    fill(black);
+    quitText();
+  }
+  fill(resetWhite);
+}
+//End quitButton
+
+//
+
+void restartButton() {
+  rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
+  if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight ) {
+    fill(black);
+    rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
+    fill(resetWhite);
+    restartText();
+  } else {
+    stroke(black);
+    fill(green);
+    rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
+    stroke(gold);
+    fill(black);
+    restartText();
+  }
+  fill(resetWhite);
+}
+//End restartButton
+
+//
 void button1() {
   rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
@@ -226,47 +267,5 @@ void button8() {
   fill(resetWhite);
 }
 //End button8
-
-//
-
-void quitButton() {
-  rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight ) {
-    fill(black);
-    rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-    fill(resetWhite);
-    quitText();
-  } else {
-    stroke(black);
-    fill(green);
-    rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-    stroke(gold);
-    fill(black);
-    quitText();
-  }
-  fill(resetWhite);
-}
-//End quitButton
-
-//
-
-void restartButton() {
-  rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
-  if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight ) {
-    fill(black);
-    rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
-    fill(resetWhite);
-    restartText();
-  } else {
-    stroke(black);
-    fill(green);
-    rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
-    stroke(gold);
-    fill(black);
-    restartText();
-  }
-  fill(resetWhite);
-}
-//End restartButton
 
 //
